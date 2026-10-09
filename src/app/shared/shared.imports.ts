@@ -1,21 +1,24 @@
-// Elementos de angular Material que se importan en los componentes standalone de la aplicación.
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { RouterLink } from '@angular/router';
+import { MatButtonModule } from '@angular/material/button';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatIconModule } from '@angular/material/icon';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 
-import {MatButtonModule} from '@angular/material/button';
-import {MatDividerModule} from '@angular/material/divider';
-import {MatIconModule} from '@angular/material/icon';
 /**
  * SHARED_IMPORTS
  * ---------------------------------------------------------
  * Colección de módulos/directivas reutilizables en
  * componentes standalone.
- *
- * Se importa así:
- * imports: [...SHARED_IMPORTS, HeaderApp, FooterApp]
  */
 export const SHARED_IMPORTS = [
-
-  /* Angular Material */
+  FormsModule,
+  ReactiveFormsModule,
+  RouterLink,
   MatButtonModule,
   MatDividerModule,
   MatIconModule,
+  MatFormFieldModule,
+  MatInputModule,
 ];
